@@ -33,10 +33,11 @@
                                     </div>
                                 </div>
 
+
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
-                                        <label for="tipo_persona">tipo de persona</label>
-                                        {!! Form::text('tipo_persona',null,array('class'=>'form-control')) !!}
+                                        <label for="tipo_persona">Tipo de persona</label>
+                                        {!! Form::select('tipo_persona', ['Cliente' => 'Cliente', 'Proveedor' => 'Proveedor'], null, ['class' => 'form-control']) !!}
                                     </div>
                                 </div>
 

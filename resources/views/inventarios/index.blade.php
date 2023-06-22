@@ -14,10 +14,10 @@
 
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h2>Productos con stock igual a 0:</h2>
+                                        <h2>Productos agotados</h2>
                                         <ul class="list-group">
                                             @foreach ($faltantes as $producto)
-                                                <li class="list-group-item">{{ $producto->nombre }}</li>
+                                                <li class="list-group-item">{{$producto->codigo.' '.$producto->nombre }}</li>
                                             @endforeach
                                         </ul>
                                     </div>

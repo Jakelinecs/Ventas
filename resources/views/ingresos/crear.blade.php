@@ -29,12 +29,14 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <label for="idproveedor">Proveedor</label>
-                                        <select name="idproveedor" id="idproveedor" class="form-control" required>
-                                            <option value="">Seleccionar Proveedor</option>
+                                        <input type="text" id="idproveedor" name="idproveedor" list="idproveedores" class="form-control">
+
+                                        <datalist id="idproveedores">
                                             @foreach ($proveedores as $proveedor)
                                                 <option value="{{ $proveedor->id }}">{{ $proveedor->nombre }}</option>
                                             @endforeach
-                                        </select>
+                                        </datalist>
+
                                     </div>
                                 </div>
 

@@ -3,7 +3,7 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h3 class="page__heading">Alta de Personas</h3>
+            <h3 class="page__heading">Alta de Venta</h3>
         </div>
         <div class="section-body">
             <div class="row">
@@ -27,14 +27,16 @@
 
 
                                 <div class="col-xs-12 col-sm-12 col-md-12">
+
                                     <div class="form-group">
                                         <label for="idcliente">Cliente</label>
-                                        <select name="idcliente" id="idcliente" class="form-control" required>
-                                            <option value="">Seleccionar Cliente</option>
-                                            @foreach ($clientes as $cliente)
-                                                <option value="{{ $cliente->id }}">{{ $cliente->nombre }}</option>
+                                        <input type="text" id="idcliente" name="idcliente" list="clientes" class="form-control">
+
+                                        <datalist id="clientes">
+                                            @foreach($clientes as $cliente)
+                                            <option value="{{ $cliente->id }}">{{ $cliente->nombre }}</option>
                                             @endforeach
-                                        </select>
+                                        </datalist>
                                     </div>
                                 </div>
 
