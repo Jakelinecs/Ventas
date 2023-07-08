@@ -44,3 +44,9 @@ Route::group(['middleware'=> ['auth']], function(){
 
 
 });
+Route::apiResource('personas', PersonaApiController::class);
+Route::apiResource('categorias', CategoriaApiController::class);
+Route::apiResource('productos', ProductoApiController::class);
+Route::apiResource('ventas', VentaApiController::class);
+Route::apiResource('ingresos', IngresoApiController::class);
+Route::apiResource('inventarios', InventarioApiController::class);

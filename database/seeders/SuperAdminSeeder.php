@@ -22,7 +22,7 @@ class SuperAdminSeeder extends Seeder
         //creando al super susuario
         $usuario = User::create([
             'name'=>'Ad min',
-            'email'=>'admin@gmail.com',
+            'email'=>'admin123@gmail.com',
             'password'=>bcrypt('12345678'),
 
         ]);

@@ -20,12 +20,12 @@
         </div>
         <div class="col-4">
             <small>
-                Clinica Veterinaria C & B &copy; {{ date('Y') }}
+                Libreria Aurora &copy; {{ date('Y') }}
             </small>
         </div>
         <div class="col-4">
             <small>
-                © Grupo  - SA
+                © Grupo  - 29
             </small>
         </div>
     </div>
